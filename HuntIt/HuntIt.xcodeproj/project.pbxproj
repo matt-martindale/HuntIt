@@ -29,9 +29,30 @@
 		C8125DFF2E57ADA0003F55AA /* HuntItUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HuntItUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		C8125E172E57B313003F55AA /* Exceptions for "HuntIt" folder in "HuntItTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"Utilities/GoogleService-Info.plist",
+			);
+			target = C8125DF42E57ADA0003F55AA /* HuntItTests */;
+		};
+		C8125E182E57B313003F55AA /* Exceptions for "HuntIt" folder in "HuntItUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"Utilities/GoogleService-Info.plist",
+			);
+			target = C8125DFE2E57ADA0003F55AA /* HuntItUITests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		C8125DE72E57AD9E003F55AA /* HuntIt */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				C8125E172E57B313003F55AA /* Exceptions for "HuntIt" folder in "HuntItTests" target */,
+				C8125E182E57B313003F55AA /* Exceptions for "HuntIt" folder in "HuntItUITests" target */,
+			);
 			path = HuntIt;
 			sourceTree = "<group>";
 		};
@@ -409,7 +430,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mattkmart.HuntIt;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iOS.HuntIt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -438,7 +459,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mattkmart.HuntIt;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iOS.HuntIt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
