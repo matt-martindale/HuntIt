@@ -14,7 +14,6 @@ struct Home: View {
     var body: some View {
         NavigationStack {
             VStack {
-                Text("Hello \(Auth.auth().currentUser?.displayName)")
                 Button("Logout") {
                     try? Auth.auth().signOut()
                     loggedIn = false

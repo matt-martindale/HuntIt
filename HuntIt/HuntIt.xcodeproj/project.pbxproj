@@ -30,6 +30,13 @@
 		C8125E572E57B3F8003F55AA /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = C8125E562E57B3F8003F55AA /* FirebaseRemoteConfig */; };
 		C8125E592E57B3F8003F55AA /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = C8125E582E57B3F8003F55AA /* FirebaseStorage */; };
 		C8125E5B2E57B3F8003F55AA /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = C8125E5A2E57B3F8003F55AA /* FirebaseStorageCombine-Community */; };
+		C8C843FF2E582E3600D17A2A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C843F62E582E3600D17A2A /* ContentView.swift */; };
+		C8C844002E582E3600D17A2A /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C843F72E582E3600D17A2A /* Home.swift */; };
+		C8C844012E582E3600D17A2A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C843F82E582E3600D17A2A /* LoginView.swift */; };
+		C8C844022E582E3600D17A2A /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C843FB2E582E3600D17A2A /* AuthenticationViewModel.swift */; };
+		C8C844032E582E3600D17A2A /* HuntItApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C843FD2E582E3600D17A2A /* HuntItApp.swift */; };
+		C8C844042E582E3600D17A2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8C843FA2E582E3600D17A2A /* Assets.xcassets */; };
+		C8C844082E582E8700D17A2A /* AuthorizationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C844072E582E8700D17A2A /* AuthorizationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +60,14 @@
 		C8125DE52E57AD9E003F55AA /* HuntIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HuntIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8125DF52E57ADA0003F55AA /* HuntItTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HuntItTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8125DFF2E57ADA0003F55AA /* HuntItUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HuntItUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8C843F62E582E3600D17A2A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C8C843F72E582E3600D17A2A /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		C8C843F82E582E3600D17A2A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		C8C843FA2E582E3600D17A2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C8C843FB2E582E3600D17A2A /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
+		C8C843FC2E582E3600D17A2A /* HuntIt.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HuntIt.entitlements; sourceTree = "<group>"; };
+		C8C843FD2E582E3600D17A2A /* HuntItApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HuntItApp.swift; sourceTree = "<group>"; };
+		C8C844072E582E8700D17A2A /* AuthorizationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -73,11 +88,6 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		C8125DE72E57AD9E003F55AA /* HuntIt */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = HuntIt;
-			sourceTree = "<group>";
-		};
 		C8125DF82E57ADA0003F55AA /* HuntItTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = HuntItTests;
@@ -95,6 +105,11 @@
 				C8125E622E57B439003F55AA /* Exceptions for "Utilities" folder in "HuntItUITests" target */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		C8C843F42E582DDE00D17A2A /* Preview Content */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -150,7 +165,7 @@
 		C8125DDC2E57AD9E003F55AA = {
 			isa = PBXGroup;
 			children = (
-				C8125DE72E57AD9E003F55AA /* HuntIt */,
+				C8C843FE2E582E3600D17A2A /* HuntIt */,
 				C8125E5D2E57B439003F55AA /* Utilities */,
 				C8125DF82E57ADA0003F55AA /* HuntItTests */,
 				C8125E022E57ADA0003F55AA /* HuntItUITests */,
@@ -166,6 +181,38 @@
 				C8125DFF2E57ADA0003F55AA /* HuntItUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		C8C843F92E582E3600D17A2A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C8C843F62E582E3600D17A2A /* ContentView.swift */,
+				C8C843F72E582E3600D17A2A /* Home.swift */,
+				C8C843F82E582E3600D17A2A /* LoginView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C8C843FE2E582E3600D17A2A /* HuntIt */ = {
+			isa = PBXGroup;
+			children = (
+				C8C843F42E582DDE00D17A2A /* Preview Content */,
+				C8C844052E582E5A00D17A2A /* ViewModels */,
+				C8C843F92E582E3600D17A2A /* Views */,
+				C8C843FA2E582E3600D17A2A /* Assets.xcassets */,
+				C8C843FB2E582E3600D17A2A /* AuthenticationViewModel.swift */,
+				C8C843FD2E582E3600D17A2A /* HuntItApp.swift */,
+				C8C843FC2E582E3600D17A2A /* HuntIt.entitlements */,
+			);
+			path = HuntIt;
+			sourceTree = "<group>";
+		};
+		C8C844052E582E5A00D17A2A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C8C844072E582E8700D17A2A /* AuthorizationManager.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,8 +231,8 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				C8125DE72E57AD9E003F55AA /* HuntIt */,
 				C8125E5D2E57B439003F55AA /* Utilities */,
+				C8C843F42E582DDE00D17A2A /* Preview Content */,
 			);
 			name = HuntIt;
 			packageProductDependencies = (
@@ -315,6 +362,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8C844042E582E3600D17A2A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +387,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8C843FF2E582E3600D17A2A /* ContentView.swift in Sources */,
+				C8C844002E582E3600D17A2A /* Home.swift in Sources */,
+				C8C844012E582E3600D17A2A /* LoginView.swift in Sources */,
+				C8C844022E582E3600D17A2A /* AuthenticationViewModel.swift in Sources */,
+				C8C844032E582E3600D17A2A /* HuntItApp.swift in Sources */,
+				C8C844082E582E8700D17A2A /* AuthorizationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
