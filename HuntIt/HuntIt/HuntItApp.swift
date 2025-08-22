@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import FirebaseCore
+import Firebase
 
 class AppDelegate: NSObject, UIApplicationDelegate {
   func application(_ application: UIApplication,
@@ -22,7 +22,7 @@ struct HuntItApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView(authenticationViewModel: nil)
+            ContentView()
         }
     }
 }

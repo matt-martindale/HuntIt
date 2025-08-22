@@ -16,7 +16,6 @@ class AuthenticationViewModel {
         request.requestedScopes = [.fullName, .email]
         let nonce = randomNonceString()
         currentNonce = nonce
-        print(nonce)
         request.nonce = sha256(nonce)
     }
     
